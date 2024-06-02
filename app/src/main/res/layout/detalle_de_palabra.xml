@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".WordDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Barra de título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8B4513"
+            android:padding="16dp"
+            android:text="Detalle de Palabra"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Definición completa -->
+        <TextView
+            android:id="@+id/tvDefinition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_margin="16dp"
+            android:text="Definición completa aquí"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- Ejemplos de uso -->
+        <TextView
+            android:id="@+id/tvExamples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDefinition"
+            android:layout_margin="16dp"
+            android:text="Ejemplos de uso aquí"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- Sinónimos y antónimos -->
+        <TextView
+            android:id="@+id/tvSynonymsAntonyms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExamples"
+            android:layout_margin="16dp"
+            android:text="Sinónimos y antónimos aquí"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSynonymsAntonyms"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8B4513"
+                android:text="Favorito"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#8B4513"
+                android:text="Compartir"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".MainActivity">
+
+    <!-- Barra de título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8B4513"
+        android:padding="16dp"
+        android:text="Palabreando Sin Wifi"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Campo de búsqueda -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_margin="16dp"
+        android:background="@drawable/search_box_background"
+        android:hint="Buscar palabra..."
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- Lista de palabras populares -->
+    <ListView
+        android:id="@+id/lvPopularWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:layout_marginTop="16dp"
+        android:divider="#8B4513"
+        android:dividerHeight="1dp"
+        android:padding="16dp" />
+
+    <!-- Botón para categorías -->
+    <Button
+        android:id="@+id/btnCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvPopularWords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#8B4513"
+        android:text="Categorías"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
